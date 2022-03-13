@@ -11,3 +11,16 @@
         border-radius: 100%;
     }
 }
+
+@mixin near_circle {
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        width: 36px;
+        height: 36px;
+        background: $main-color;
+        border-radius: 100%;
+    }
+}
