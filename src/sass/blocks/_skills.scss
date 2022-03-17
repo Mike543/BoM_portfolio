@@ -1,0 +1,110 @@
+.skills {
+    padding-top: 120px;
+
+    &__subtitle {
+        text-align: center;
+        position: relative;
+
+        @include before_circle;
+
+        &::before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__wrapper {
+        margin-top: 60px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 453px 170px;
+        row-gap: 120px;
+    }
+
+}
+
+.skill {
+
+    &__items {
+
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        gap: 13px;
+    }
+
+    &__item {
+        border: 1px solid #000000;
+
+        padding-left: 30px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 115px 36px 1fr;
+
+        &-icon {
+            align-self: center;
+        }
+
+        p {
+            width: 211px;
+        }
+    }
+
+    &__percents {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        gap: 30px 45px;
+
+    }
+
+    &__percent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 14px;
+
+
+        &-header {
+            position: relative;
+            padding-left: 13px;
+            padding-top: 8px;
+
+            z-index: 2;
+            @include before_circle;
+
+            &::before {
+                top: 0%;
+            }
+        }
+
+        &-count {
+            padding-top: 8px;
+            justify-self: end;
+        }
+
+        &-lineholder {
+            position: relative;
+            grid-column: 1 / 3;
+            background: #E8E4DE;
+            border-radius: 4px;
+            z-index: -1;
+
+            span {
+                display: block;
+                height: 100%;
+                background: #FFA501;
+                border-radius: 4px;
+            }
+        }
+
+    }
+
+}
