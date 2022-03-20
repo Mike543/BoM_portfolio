@@ -1,29 +1,11 @@
 .skills {
     padding-top: 120px;
 
-    &__subtitle {
-        text-align: center;
-        position: relative;
-
-        @include before_circle;
-
-        &::before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-
-    &__title {
-        text-align: center;
-    }
-
     &__wrapper {
         margin-top: 60px;
         position: relative;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 453px 170px;
         row-gap: 120px;
     }
 
@@ -58,7 +40,6 @@
     }
 
     &__percents {
-        margin-top: 120px;
         display: grid;
         grid-template-columns: repeat(3, 350px);
         grid-template-rows: repeat(2, 70px);
@@ -68,6 +49,7 @@
 
     &__percent {
         display: grid;
+
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 14px;
 

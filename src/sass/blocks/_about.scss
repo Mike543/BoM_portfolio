@@ -34,13 +34,6 @@
         grid-auto-rows: 1fr;
     }
 
-    &__subtitle {
-        position: relative;
-        padding-left: 12px;
-        z-index: 2;
-        @include before_circle;
-    }
-
     &__skill {
 
         display: grid;

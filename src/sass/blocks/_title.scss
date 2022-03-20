@@ -21,6 +21,35 @@
     &_fz48 {
         font-size: 48px;
     }
+
+    &__section {
+        &-subtitle {
+
+            text-align: center;
+            position: relative;
+
+            @include before_circle;
+
+            &::before {
+                top: -6px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+        }
+
+        &-before {
+
+            position: relative;
+            padding-left: 12px;
+            z-index: 2;
+            @include before_circle;
+        }
+
+        &-title {
+            text-align: center;
+        }
+    }
 }
 
 .text {
