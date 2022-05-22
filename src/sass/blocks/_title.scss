@@ -50,14 +50,19 @@
             text-align: center;
         }
     }
+
+    &_policy {
+        text-align: center;
+        padding-top: 30px;
+    }
 }
 
 .text {
     font-size: 12px;
     line-height: 18px;
 
-    &_fz14 {
-        font-size: 14px;
-        line-height: 21px;
+    &_fz13 {
+        font-size: 13px;
+        line-height: 15px;
     }
 }
